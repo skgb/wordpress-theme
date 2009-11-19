@@ -1,0 +1,437 @@
+/*
+Theme Name: SKGB-Web IV
+Theme URI: http://www.skgb.de/
+Description: Das Theme der Segel- und Kanugemeinschaft Bruchertalsperre – SKGB-Web Version 4.5 – setzt das Design des SKGB-Web 4.1 in Wordpress um, ohne radikale Änderungen vorzunehmen.
+Version: 4.5d
+Author: Arne Johannessen, 2009
+Tags: skgb, proprietary, confidential, utf8
+
+*/
+
+/*
+ * $Id$
+ * based on r32 of:
+ * 
+ * SKGB Standard (Screen) Stylesheet
+ * Version 4.1.3
+ * Absolute/margin positioning edition
+ * CSS layer 2
+ *
+ * Copyright (c) 2000-06 Segel- und Kanugemeinschaft Bruchertalsperre e.V.
+ * by Arne Johannessen
+ * mailto:webmaster@skgb.de
+ *
+ */
+
+
+H2 A {
+	color: black !important;
+}
+.post {
+	margin-top: 1.5em;
+}
+.post:first-child {
+	margin-top: 0;
+}
+H3#comments {
+	margin-top: 1.2em;
+}
+ADDRESS.meta {
+	clear: both;
+}
+
+
+/***** GLOBAL SETTINGS *****/
+HTML {
+	padding: 0;
+	margin: 0;
+}
+BODY {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font: 1em "Times", serif;
+	color: black;
+	background: white;
+	quotes: "\201e" "\201c" "\201a" "\2018";  /* german curly quotes */
+}
+Q:before {
+	content: open-quote;
+}
+Q:after {
+	content: close-quote;
+}
+A:link {
+	color: #00d;
+}
+A:visited {
+	color: #61a;
+}
+A:active {
+	color: #d00;
+}
+#main>#body A, #infoMail>A, #leftColumnBottom>A, #upLink A, #copyright>A, #webmaster>A {
+	color: #ce1f05;
+	text-decoration: none;
+}
+#main #body A, #upLink A {
+	font-weight: bold;
+}
+BODY A:link {
+	color: #ce1f05;
+}
+BODY A:visited {
+	color: #cf5402;
+}
+BODY A:active {
+	color: #ce1f05;
+}
+/*BODY .A {
+	color: #ce1f05;
+}*/
+BODY A:hover, #main>#body A:hover, #infoMail>A:hover, #leftColumnBottom>A:hover, #upLink A:hover, #copyright>A:hover, #webmaster>A:hover {
+	text-decoration: underline;
+}
+.hide {
+	display: none;
+}
+IMG {
+	border: none;
+}
+ACRONYM {
+	font-variant: inherit;
+	border-width: 0 0 1px 0;
+	border-style: none none dotted none;
+}
+ACRONYM, ABBR {
+	font-style: inherit;
+	border-color: #ce1f05;
+	cursor: help;
+}
+ACRONYM.noTitle, ABBR.noTitle {
+	border: none;
+	cursor: default;
+}
+EM {
+	font-style: italic;
+	font-weight: normal;
+}
+EM EM {
+	font-style: normal;
+}
+STRONG {
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+/***** MAIN POSITIONING SCHEME *****/
+#head {
+	margin: 3px auto 0 auto;
+	width: 572px;
+	padding: 0 0 .5em 0;
+}
+#main {
+	padding-right: 3px;
+	clear: both;
+}
+#leftColumn {
+	position: absolute;
+	top: auto;
+	left: 0;
+	width: 7.6em;
+}
+#body, #bodyFoot {
+	margin-left: 8em;
+}
+#menu {
+	width: 100%;
+}
+#leftColumnBottom {
+	width: 97%;
+	margin: 0;
+	padding: .2em 1% 1em 2%;
+}
+#bodyFoot {
+	clear: left;
+	clear: right !important;
+	margin-top: 0;
+	margin-right: 3px;
+	margin-bottom: 0.4em;
+}
+#foot {
+	clear: both !important;
+	margin: 0 0 0 3px;
+}
+
+
+
+/***** BACKGROUND IMAGES AND COLOR *****/
+#main #menu {
+	background: white url("images/menu-v.gif") repeat-y top right;
+}
+#menu #menuPicTop {
+	background: transparent url("images/menu-t.gif") top right no-repeat;
+}
+* #end {
+	display: block;
+	width: 100%;
+	height: 15px;
+	background: white url("images/menu-h.gif") repeat-x bottom left;
+}
+#end #menuPicBottom {
+	display: block;
+	width: 100%;
+	height: 15px;
+	background: url("images/menu-b.gif") bottom right no-repeat;
+}
+#leftColumn {
+	background: transparent url("images/menu-h.gif") repeat-x;
+}
+BODY #main {
+	background: white url("images/menu-h.gif") repeat-x;
+}
+#main #body {
+	padding-top: 18px;
+}
+
+
+
+/***** MENU LAYOUT AND STYLE *****/
+#main #menu {
+	font-family: "Arial", sans-serif;
+	color: #666;
+	cursor: default;
+}
+#menuPicTop DIV {
+	padding: .4em 0 0 3px;
+}
+#leftColumn>#menu A {
+	text-decoration: none;
+}
+#main #menu A {
+	color: #ce1f05;
+	background: transparent;
+	cursor: pointer;
+	font-weight: normal;
+}
+#main #menu A:hover {
+	text-decoration: underline !important;
+}
+#main #menu SMALL {
+	font-family: "Geneva", sans-serif;
+	font-size: .77em;
+	padding-left: .4em;
+}
+#main #menu SPAN.wrap {
+	display: block;
+}
+
+
+
+/***** HEAD STYLE *****/
+#head {
+	text-align: center;
+	font-family: "Geneva", sans-serif;
+	font-size: .77em;
+}
+#head #headBox {
+	text-align: left !important;
+}
+#head #headBox H1 {
+	margin: 0;
+	padding: 0;
+}
+#location {
+	width: 414px;
+	float: left;
+	padding-top: 3px;
+	text-align: left !important;
+}
+#infoMail {
+	display: block;
+	padding-top: 3px;
+	text-align: left !important;
+}
+
+
+
+/***** LOWER LEFT COLUMN STYLE *****/
+#leftColumnBottom {
+	font-family: "Geneva", sans-serif;
+	font-size: .77em;
+	font-style: italic;
+	color: inherit;
+	background: white;
+}
+
+
+
+/***** FOOT STYLE *****/
+DIV#foot, #footContent {
+	font: .77em "Geneva", sans-serif;
+	text-align: left;
+}
+#upLink {
+	display: inline !important;
+	font-style: italic;
+}
+#upLink A {
+	font-style: normal;
+}
+#copyright {
+	font-style: italic;
+}
+#footContent {
+	text-align: left;
+}
+#date {
+	font-style: italic;
+	float: right;
+	margin-left: 1em;
+}
+
+
+
+/***** BODY STYLE *****/
+#body P, #body UL, #body OL, #body DL {
+	margin-top: .5em;
+	margin-bottom: .5em;}
+H1, H2 {
+	margin: 0 0 .5em 0;}
+H3, H4 {
+	margin: .5em 0;}
+#body P+H2, #body P+H3, #body P+H4 {
+	margin: 1.2em 0 .5em 0;}
+#body H2+H3, #body H3+H4 {
+	margin: .5em 0;}
+#body P+UL, #body P+OL, #body P+DL {
+	margin-top: .4em;
+	margin-bottom: .8em;}
+#body LI UL, #body LI OL, #body LI DL {
+	margin-top: 0;
+	margin-bottom: 0;}
+
+LABEL {
+	cursor: default;}
+#body P.strong {
+	font-size: large;
+	font-weight: bold}
+#body {
+	color: black;
+	background: transparent;}
+.center {
+	text-align: center;}
+.right {
+	text-align: right;}
+.left {
+	float: left;}
+#body DIV.pictCaption {
+	font-family: "Geneva", sans-serif;
+	font-style: italic;
+	font-size: .77em;}
+#body TABLE#kosten TBODY TR {
+	margin-top: 0;
+	margin-bottom: 0;}
+#body TABLE#kosten, #body TABLE#kosten TBODY {
+	margin-top: .5em;
+	margin-bottom: .5em;}
+
+/*
+#terminliste .termin, #termineJugend .termin {
+	width: 11em;
+	float: left;}
+#terminliste DIV, #termineJugend DIV {
+	clear: left;}
+*/
+#terminliste EM, #termineJugend EM {
+	font-weight: normal;
+	font-style: normal;
+	color: #006600;
+	background: white;}
+#terminliste .noDate {
+	font-style: italic;}
+#termineJugend .par {
+	margin: .4em 0;}
+DL.ausschreibung DT {
+	font-weight: bold;}
+.ausschreibung FORM, .ausschreibung INPUT {
+	margin: 1px 0;
+	padding: 0;}
+TD {
+	padding: 0 1px;}
+TABLE {
+	border: none;}
+#body .disclaimer {
+	background: #ffff99;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #666666;}
+#body .disclaimer P {
+	margin: 0;
+	padding: 0.5em;}
+.indent {
+	padding-left: 2.5em;}
+#body #moreLinks DT, #body #kontaktListe DT {
+	margin-top: .4em;}
+
+#google .by-google {
+	float:right;
+	margin: 0 1ex 1ex 1em;
+	border: solid 1px gray;
+	padding: 1ex;
+	font-size: 0.76em;
+	text-align: center;
+}
+
+.fotosStufe2 .thumb {
+	display: block;
+	float: left;
+	color: inherit;
+	background: url("images/rahmen.gif") no-repeat;
+	width: 100px;
+	height: 76px;
+	margin: .1em .7em .7em .1em;
+	padding: 0;
+}
+.fotosClear {
+	clear: left !important;
+}
+
+TABLE#linkListe H3, TABLE#linkListe H4 {
+	margin: 0;}
+TABLE#linkListe TR {
+	vertical-align: middle;}
+TABLE#linkListe A.head {
+	font: .77em "Geneva", sans-serif;}
+.vtop {
+	vertical-align: top; }
+.vbottom {
+	vertical-align: bottom; }
+
+TD DEL {
+	color: black;
+	background: #ffb6ab;}
+
+.sitemapLinkList P+P {
+	text-indent: 0 !important;
+	margin-left: 1em;}
+
+.unbold {
+	font-weight: normal;
+}
+
+.note {
+	position: relative;
+	min-height: 70px;
+	padding: .5em 0 .5em 0;
+}
+.note IMG {
+	position: absolute;
+	left: 0;
+}
+.note H2, .note H3, .note ADDRESS, .note P {
+	font-size: 1em;
+	margin: 0 0 .5em 70px;
+}
