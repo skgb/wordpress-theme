@@ -1,0 +1,6 @@
+<IfModule mod_expires.c>
+	<FilesMatch "\.(gif|jpe?g|png|js|css)$">
+		ExpiresActive On
+		ExpiresDefault "access plus 1 hour"
+	</FilesMatch>
+</IfModule>

@@ -1,0 +1,573 @@
+/*
+Theme Name: SKGB-Web V
+Theme URI: http://www.skgb.de/
+Description: Das neue Theme der Segel- und Kanugemeinschaft Bruchertalsperre – SKGB-Web Version 5.0 – modernisiert Design und Funktionalität des SKGB-Web in Wordpress.
+Version: 5.0d
+Author: Arne Johannessen, 2009
+Tags: skgb, proprietary, confidential, utf8
+
+*/
+
+
+/* @group layout */
+HTML, BODY, #layout-masthead, #layout-sidebar, #layout-main {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+HTML {
+	position: static;
+	background: #666 url(images/maxwidth-bg-shadow.gif) repeat-y -16px 0;
+}
+BODY {
+	position: absolute;
+	top: 0;
+	left: 0;
+/*
+ * this affects the white background:
+ * - without it, short pages seem to end prematurely
+ * - with it, long pages lack white background below the fold
+ * we're better off without it, but it'd sure be nice to find a solution after all
+	bottom: 0;
+*/
+	max-width: 960px;
+	background: white;
+}
+#layout-masthead {
+	position: relative;
+	min-height: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-bottom-width: 1px;
+}
+#layout-sidebar {
+	position: absolute;
+	left: 0;
+	top: 90px;
+	margin: 1px .6em 0;
+	width: 8.3em;
+}
+#layout-main {
+	position: static;
+	margin-left: 9.5em;
+}
+/* @end */
+
+
+
+/* @group masthead */
+H1#layout-masthead {
+/*
+	padding: 0 0 0 .5em;
+*/
+	font-family: "Helvetica Neue Light", /* "HelveticaNeue-Light", */ "Helvetica Neue", "Helvetica", "Free Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 1.1em;
+	text-transform: lowercase;
+	border-bottom: #ddd 1px solid;
+}
+H1#layout-masthead>SPAN {
+	display: block;
+	margin: 0 100px 0 .5em;
+}
+H1#layout-masthead BIG {
+	display: block;
+	font-size: 1.4em;
+	margin: .2em 0 .15em 0;
+}
+H1#layout-masthead IMG {
+	position: absolute;
+	width: 134px;
+	height: 80px;
+	bottom: 5px;
+	right: 5px;
+}
+/* @end */
+
+
+
+/* @group menu */
+#layout-sidebar {
+	font-family: "Helvetica Neue", "Helvetica", "Free Sans", "Arial", sans-serif;
+}
+#layout-sidebar UL, #layout-sidebar LI, #layout-sidebar A, #layout-sidebar STRONG {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none; /* IE7 shows bullets even for non-list-items */
+}
+#layout-sidebar UL.menu A,
+#layout-sidebar UL.menu STRONG {
+	padding: .2em;
+	border-bottom: #ddd 1px solid;
+	color: #f44728;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: normal;
+}
+#layout-sidebar UL.menu A:hover, #layout-sidebar UL.sitemenu A:hover, #layout-sidebar UL.sitemenu A:hover *,
+#layout-sidebar UL.menu STRONG:hover, #layout-sidebar UL.sitemenu STRONG:hover, #layout-sidebar UL.sitemenu STRONG:hover * {
+	background-color: #f44728;
+	color: white !important;
+}
+/*
+#layout-sidebar UL.menu STRONG {
+	font-weight: bold;
+}
+*/
+#layout-sidebar UL.menu STRONG:before {
+	content: '»';
+	display: block;
+	position: absolute;
+	right: .1em;
+}
+
+/* @end */
+
+
+
+/* @group meta-menu */
+/*
+#layout-sidebar UL.sitemenu LI:first-child A:hover {
+	background-color: inherit;
+	color: inherit;
+}
+*/
+#layout-sidebar UL.sitemenu {
+	margin-top: 1.4em;
+}
+#layout-sidebar UL.sitemenu A,
+#layout-sidebar UL.sitemenu STRONG {
+	padding: .3em .15em;
+	color: #f44728;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1.0;
+	font-weight: normal;
+}
+#layout-sidebar UL.sitemenu LI INPUT {
+	width: 95%;
+}
+#layout-sidebar UL.sitemenu {
+	cursor: pointer;
+}
+#layout-sidebar UL.sitemenu .skgb-intern {
+	color: black !important;
+}
+#layout-sidebar UL.sitemenu .skgb-intern EM {
+	font-style: normal;
+	color: #f44728;
+}
+#layout-sidebar UL.sitemenu STRONG:before {
+	content: '» ';
+	visibility: hidden;
+}
+#layout-sidebar UL.sitemenu STRONG:after {
+	content: ' »';
+}
+#layout-sidebar UL.sitemenu STRONG#menuitem-197:before {
+	content: none;
+	display: none;
+}
+
+/* @end */
+
+
+
+/* @group content */
+/*
+BODY {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "Garuda", sans-serif;
+}
+*/
+/* @end */
+
+
+
+
+
+
+
+
+
+/*
+@import url(layout.css);
+*/
+
+BODY {
+	line-height: 1.15;
+	font-family: "Times", "Times New Roman", "Free Serif", serif;
+}
+
+A {
+	text-decoration: underline;
+	color: #f44728;
+	outline-color: #f44728;
+}
+A:visited {
+	color: #f13b70;
+	outline-color: #f13b70;
+}
+A:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #f44728;
+}
+A:visited:hover {
+	background-color: #f13b70;
+}
+
+/* @group search */
+
+#searchform {
+	display: inline;
+}
+#searchform INPUT {
+	display: none;
+}
+#searchform INPUT:first-child {
+	font-size: 83%;
+	display: inline;
+}
+/*
+#searchform INPUT::-webkit-input-placeholder,
+*/
+#searchform INPUT.placeholder {
+	color: gray;
+	text-align: center;
+}
+SPAN.searchterm {
+	background-color: yellow;
+}
+
+/* @end */
+
+
+
+/* @group footer */
+
+#layout-footer {
+	position: static;
+	margin: 2em 0 1.5em 9.7em;
+	padding: 0 .67em;
+}
+#layout-footer P {
+	font-family: "Helvetica Neue", "Helvetica", "Free Sans", "Arial", sans-serif;
+	font-size: 76%;
+	font-style: oblique;
+	line-height: 1.3;
+	color: gray;	
+}
+
+/* @end */
+
+
+
+/* @group content */
+
+#layout-main {
+	padding: 0 .9em 0 .67em;
+}
+#layout-main H2, #layout-main #template-description H2 {
+	margin: 1.5em 0 0;
+	font-weight: normal;
+	font-size: 134%;
+	font-style: normal;
+	clear: both;
+}
+#layout-main>H2:first-child, #layout-main .hentry:first-child H2, #layout-main #template-description H2 {
+	margin-top: .67em;
+}
+#layout-main #template-description {
+	font-style: italic;
+}
+#layout-main .category#template-description {
+	background-position: right center;
+	background-repeat: no-repeat;
+	padding-right: 365px;
+}
+#layout-main H3 {
+	font-weight: bold;
+	font-size: 100%;
+}
+#layout-main P, #layout-main H3, #layout-main UL, #layout-main OL, #layout-main ADDRESS, #layout-main TABLE {
+	margin: .67em 0 0;
+}
+#layout-main .page H3 {
+	margin-top: 1.5em;
+}
+#layout-main UL, #layout-main OL {
+	padding: 0 0 0 1.7em;
+}
+#layout-main UL LI, #layout-main OL LI {
+	margin: 0;
+	padding: 0;
+}
+I.bootsname {
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 93%;
+}
+
+#layout-main ADDRESS, #layout-main .hentry .meta {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "Garuda", sans-serif;
+	font-size: 76%;
+	font-style: oblique;
+	line-height: 1.3;
+	color: gray;
+}
+#layout-main .page>ADDRESS {
+	clear: both;
+}
+
+#layout-main A[type="application/pdf"]:after, #layout-main A[href$=".pdf"]:after {
+    content: " [PDF]";
+    font-size: 93%;
+}
+
+/* Captions */
+#layout-main .wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: .67em;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+/*
+	border-radius: 3px;
+*/
+}
+#layout-main .wp-caption IMG {
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+}
+#layout-main A IMG {
+	border: none;
+	vertical-align: bottom;
+}
+#layout-main A:hover IMG {
+	outline-style: solid;
+	outline-width: 3px;
+	outline-color: inherit;
+}
+#layout-main .wp-caption P {
+	font-size: 83%;
+	line-height: 1.3;
+	padding: 4px;
+	margin: 0;
+}
+#layout-main .wp-caption.alignright {
+	float: right;
+	margin-right: 0;
+}
+#layout-main .wp-caption.alignleft {
+	float: left;
+	margin-left: 0;
+}
+#layout-main .wp-caption.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#layout-main .wp-caption~.alignclear {
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+/* End captions */
+
+#layout-main #wp_posts_nav {
+	margin: 2em 0;
+}
+
+/* @end */
+
+
+
+/* @group comments */
+
+#layout-main H3#comments {
+	margin: 2.6em 0 .88em;
+	text-transform: uppercase;
+	font-family: "Helvetica Neue", "Helvetica", "Free Sans", "Arial", sans-serif;
+	font-size: 76%;
+	color: gray;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 1px;
+	clear: both;
+}
+#layout-main #commentlist {
+	margin: 0;
+	padding: 0;
+}
+#layout-main #commentlist>LI {
+	display: block;
+	border: #ddd 1px none;
+	border-bottom-style: solid;
+}
+#layout-main #commentlist>LI:first-child {
+	border-top-style: solid;
+}
+#layout-main #commentlist ADDRESS {
+	margin: .88em 0;
+}
+#layout-main H4#postcomment {
+	font-size: 100%;
+	font-weight: normal;
+	margin: .67em 0;
+}
+#layout-main H4#postcomment:after {
+	content: ':';
+}
+#layout-main #commentform .address {
+	font-family: "Helvetica Neue", "Helvetica", "Free Sans", "Arial", sans-serif;
+	font-size: 76%;
+	font-style: oblique;
+	line-height: 1.3;
+	color: gray;
+}
+#layout-main #commentform P {
+	margin: .1em 0;
+}
+#layout-main #commentform TEXTAREA {
+	width: 100%;
+}
+
+/* @end */
+
+
+
+
+
+
+#layout-main TABLE {
+	border-collapse: collapse;
+	line-height: 1.3;
+}
+#layout-main TABLE.termine {
+	margin-right: 5em;
+}
+#layout-main TD, #layout-main TH, #layout-main CAPTION {
+	vertical-align: top;
+	font-weight: normal;
+	text-align: left;
+}
+#layout-main TABLE.termine CAPTION {
+	font-weight: bold;
+	margin-bottom: .25em;
+}
+#layout-main TD, #layout-main TH {
+	padding: 0 .35em;
+}
+#layout-main TABLE.termine TBODY TR:first-child TD {
+	padding-top: .25em;
+}
+#layout-main TABLE.termine TBODY TR:last-child TD {
+	padding-bottom: .25em;
+}
+#layout-main TABLE.termine THEAD, #layout-main TABLE.kosten THEAD {
+	display: none;
+}
+#layout-main TH.time, #layout-main TD.ja, #layout-main TD.nein {
+	text-align: center;
+}
+#layout-main TD.time {
+	text-align: right;
+}
+#layout-main TD.ja, #layout-main TD.nein {
+	color: white;
+	font-weight: bold;
+}
+#layout-main TD.ja {
+	background: #3c3;
+}
+#layout-main TD.ja IMG {
+	vertical-align: -2px;
+}
+#layout-main TD.nein {
+	background: #f44728;
+}
+#layout-main TBODY {
+	border-width: 1px;
+	border-color: #ddd;
+	border-style: solid none;
+}
+#layout-main TABLE.vorteile TR, #layout-main TABLE.kosten TR, #layout-main TABLE.ergebnis TR {
+	border-width: 1px;
+	border-color: #ddd;
+	border-style: none none solid none;
+}
+#layout-main TABLE.vorteile TD:first-child:before {
+	content: '→ ';
+}
+#layout-main TBODY.date-past {
+	background-color: #eee;
+	border-color: #ccc;
+}
+#layout-main TBODY.date-past TD, #layout-main TBODY.date-past .del>*, #layout-main TBODY.date-past .ins>* {
+	color: #333;
+}
+#layout-main TBODY.date-now {
+	background-color: #feffcc;
+	border-color: #dddcc5;
+}
+#layout-main TBODY.date-future {
+	background-color: white;
+}
+#layout-main .del {
+	text-decoration: line-through;
+	color: #f44728;
+}
+#layout-main .ins {
+	text-decoration: underline;
+	color: lightgreen;
+}
+#layout-main .del>*, #layout-main .ins>* {
+	color: black;
+}
+#layout-main INS, #layout-main DEL, #layout-main SPAN.date-now {
+	text-decoration: none;
+	display: block;
+	position: relative;
+}
+#layout-main INS:before, #layout-main DEL:before, #layout-main SPAN.date-now:before {
+	display: block;
+	position: absolute;
+	left: 100%;
+	margin-left: 1em;
+	
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "Garuda", sans-serif;
+	font-size: 76%;
+	color: gray;
+	font-style: normal;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background-color: white;
+	min-width: 5em;
+}
+#layout-main INS:before {
+	content: 'neu!';
+	z-index: 1;
+}
+#layout-main DEL:before {
+	content: 'fällt aus';
+	z-index: 3;
+}
+#layout-main SPAN.date-now:before {
+	content: 'heute!';
+	z-index: 2;
+}
+#layout-main SPAN.ins>INS, #layout-main SPAN.del>DEL {
+	display: inline;
+}
+#layout-main SPAN.ins>INS:before, #layout-main SPAN.del>DEL:before {
+	display: none;
+}
