@@ -328,6 +328,11 @@ I.bootsname {
     font-size: 93%;
 }
 
+IMG.attachment-large {
+	max-width: 100%;
+}
+
+
 /* Captions */
 #layout-main .wp-caption {
 	border: 1px solid #ddd;
