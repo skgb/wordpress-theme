@@ -13,7 +13,7 @@
 
 <DIV ID="layout-footer">
 
-<P ID="copyright">© 1999–2009 <ABBR TITLE="Segel- und Kanugemeinschaft Bruchertalsperre e. V.">SKGB</ABBR> · <A HREF="mailto:info&#064;skgb.de">info&#064;skgb.de</A> · <?php wp_register('', ' ·'); ?> <?php wp_loginout(); ?>
+<P ID="copyright">© 1999–2010 <ABBR TITLE="Segel- und Kanugemeinschaft Bruchertalsperre e. V.">SKGB</ABBR> · <A HREF="mailto:info&#064;skgb.de">info&#064;skgb.de</A> · <?php wp_register('', ' ·'); ?> <?php wp_loginout(); ?>
 
 
 </DIV>
