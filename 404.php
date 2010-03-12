@@ -184,9 +184,8 @@ else {
 	<P><LABEL>skgb.de lokal durchsuchen: <INPUT TYPE="text" NAME="s" VALUE="<?php echo $requestSearchTerm; ?>"></LABEL> <INPUT TYPE="submit" VALUE="Suchen">
 </FORM>
 
-<!--
-<LI><P><A HREF="http://de.wikipedia.org/wiki/Sitemap">Sitemap</A> von skgb.de anschauen: <A HREF="/sitemap">Alles auf einen Blick
--->
+<LI>
+<P>Sitemap von skgb.de anschauen: <A HREF="/sitemap">Alles auf einen Blick</A>
 
 <LI>
 <P>Archiv von skgb.de anschauen: <A HREF="/2009">datiertes Archiv</A>
