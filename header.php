@@ -24,10 +24,11 @@ require(TEMPLATEPATH . '/assert_dependencies.php');
 </STYLE>
 <!--[if lte IE 7]><SCRIPT SRC="<?php bloginfo('template_url'); ?>/ie7.js" type="text/javascript"></SCRIPT><![endif]-->
 <SCRIPT SRC="<?php bloginfo('template_url'); ?>/skgb.js" type="text/javascript"></SCRIPT>
+<LINK REL="icon" HREF="<?php bloginfo('template_url'); ?>/images/icon.png">
 
 <LINK REL="alternate" TYPE="application/atom+xml" TITLE="Newsfeed mit allen SKGB-Artikeln" HREF="<?php bloginfo('atom_url'); ?>">
 <LINK REL="alternate" TYPE="application/atom+xml" TITLE="Kommentare-Feed zu allen SKGB-Artikeln" HREF="<?php bloginfo('comments_atom_url'); ?>">
-<LINK REL="pingback" HREF="<?php bloginfo('pingback_url'); ?>" />
+<LINK REL="pingback" HREF="<?php bloginfo('pingback_url'); ?>">
 
 <META NAME="ICBM" CONTENT="51.0747, 7.5620">
 <META NAME="geo.position" CONTENT="51.0747;7.5620">
