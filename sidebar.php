@@ -27,7 +27,7 @@
 	<SPAN CLASS="wrap"><A HREF="/kontakt">Kontakt</A> </SPAN>
 </DIV>
 <DIV>
-	<form id="searchform" method="get" action="<?php bloginfo('home'); ?>" style="display: inline">
+	<form id="searchform" method="get" action="<?php bloginfo('url'); ?>" style="display: inline">
 		<input type="text" name="s" value="Suche" style="color: gray; font-size: 83%; width: 7.7em" onfocus="this.style.color = 'black'; if (this.value == 'Suche') { this.value = ''; }" onblur="this.style.color = 'grey'; if (this.value == '') { this.value = 'Suche'; }">
 		<input type="submit" value="<?php _e('Search'); ?>" style="display: none">
 	</form>
