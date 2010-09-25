@@ -62,7 +62,7 @@ if ( post_password_required() ) : ?>
 
 <P ID="respond"><TEXTAREA NAME="comment" COLS="70" ROWS="7" TABINDEX="4"></TEXTAREA></P>
 
-<P><INPUT TYPE="submit" TABINDEX="5" VALUE="<?php echo attribute_escape(__('Submit Comment')); ?>">
+<P><INPUT TYPE="submit" TABINDEX="5" VALUE="<?php echo esc_attr(__('Submit Comment')); ?>">
 <INPUT TYPE="hidden" NAME="comment_post_ID" VALUE="<?php echo $id; ?>">
 
 <?php do_action('comment_form', $post->ID); ?>
