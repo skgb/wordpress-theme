@@ -1,7 +1,7 @@
 <?php
 /*
  * $Id$
- * SKGB-Web 5.0d
+ * SKGB-Web 5.0
  */
 ?>
 <!-- begin footer -->

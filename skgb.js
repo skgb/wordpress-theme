@@ -1,8 +1,8 @@
 /*
 Theme Name: SKGB-Web V
 Theme URI: http://www.skgb.de/
-Description: Das neue Theme der Segel- und Kanugemeinschaft Bruchertalsperre – SKGB-Web Version 5.0 – modernisiert Design und Funktionalität des SKGB-Web in Worpress.
-Version: 5.0d
+Description: Das neue Theme der Segel- und Kanugemeinschaft Bruchertalsperre – SKGB-Web Version 5.0 – modernisiert Design und Funktionalität des SKGB-Web in Wordpress.
+Version: 5.0
 Author: Arne Johannessen, 2009
 Tags: skgb, proprietary, confidential, utf8
 

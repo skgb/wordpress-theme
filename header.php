@@ -1,7 +1,7 @@
 <?php
 /*
  * $Id$
- * SKGB-Web 5.0d
+ * SKGB-Web 5.0
  */
 
 @header('Content-Style-Type: text/css; charset=UTF-8');
