@@ -53,7 +53,7 @@ $requestSearchTerm = htmlspecialchars(substr($requestSearchTerm, 1));
 <P><A HREF="//intern.skgb.de/">SKGB-intern</A> ist normalerweise nicht betroffen, wenn diese Meldung hier angezeigt wird.
 
 <LI>
-<P>E-Mail–Dienste sind normalerweise nicht betroffen, wenn diese Meldung angezeigt wird. Wenn du möchtest, kannst du anstatt des Webs einstweilen E-Mail, Telefon oder Telefax benutzen (Vereinsvorstand: <A HREF="mailto:info@skgb.de">info@skgb.de</A>, Tel./Fax 02261 921886).
+<P>E-Mail–Dienste sind normalerweise nicht betroffen, wenn diese Meldung angezeigt wird. Wenn du möchtest, kannst du anstatt des Webs einstweilen E-Mail, Telefon oder Telefax benutzen (Vereinsvorstand: <A HREF="mailto:info@skgb.de">info@skgb.de</A>, Tel./Fax 02264 2867870).
 
 </UL>
 <ADDRESS>Arne Johannessen</ADDRESS>
