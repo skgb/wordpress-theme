@@ -95,7 +95,7 @@ if (strlen($searchValue) > 0) {
 <UL CLASS="sitemenu">
 	<LI><FORM ID="searchform" METHOD="get" ACTION="<?php bloginfo('url'); ?>"><DIV><INPUT TYPE="text" NAME="s"<?php echo $searchValue; ?> TABINDEX="1" CLASS="placeholder"> <INPUT TYPE="submit" VALUE="<?php _e('Search'); ?>"></DIV></FORM>
 	<LI><?php printMenuItem('page', 197, '/sitemap', 'Alles auf einen Blick', ' id="menuitem-197"'); ?>
-	<LI><?php printMenuItem('', 0, '/2009', 'Archiv'); ?>
+	<LI><?php printMenuItem('', 0, '/2010', 'Archiv'); ?>
 <?php if (count(get_bookmark(9)->link_category)) : ?>
 	<LI><A HREF="//intern.skgb.de/" CLASS="skgb-intern">SKGB<EM>-intern</EM></A>
 <?php endif; ?>
