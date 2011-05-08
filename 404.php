@@ -134,11 +134,13 @@ else {
 	define('SB_ARCHIV_ROOT_PATH', '/srv/skgb.archiv');
 	define('SB_ARCHIV_ROOT_URI', 'http://archiv.skgb.de');
 	$contentArchived = FALSE;
-	$fileTypeExtensions = array('', '.shtml', '.html', '.php', '.pdf', '.jpeg', '.jpg', '.gif');
-	foreach ($fileTypeExtensions as $fileTypeExtension) {
-		if (file_exists(SB_ARCHIV_ROOT_PATH . $_SERVER['REDIRECT_URL'] . $fileTypeExtension)) {
-			$contentArchived = TRUE;
-			break;
+	if (array_key_exists('REDIRECT_URL', $_SERVER)) {
+		$fileTypeExtensions = array('', '.shtml', '.html', '.php', '.pdf', '.jpeg', '.jpg', '.gif');
+		foreach ($fileTypeExtensions as $fileTypeExtension) {
+			if (file_exists(SB_ARCHIV_ROOT_PATH . $_SERVER['REDIRECT_URL'] . $fileTypeExtension)) {
+				$contentArchived = TRUE;
+				break;
+			}
 		}
 	}
 	if ($contentArchived) {  // case (3) [307]
