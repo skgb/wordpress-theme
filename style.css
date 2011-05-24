@@ -319,7 +319,7 @@ I.bootsname {
 	line-height: 1.3;
 	color: gray;
 }
-#layout-main .page>ADDRESS {
+#layout-main .page>ADDRESS, #layout-main .post>ADDRESS {  /* or perhaps better with just .hentry ? */
 	clear: both;
 }
 
