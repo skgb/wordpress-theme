@@ -103,5 +103,5 @@ $requestSearchTerm = htmlspecialchars(substr($requestSearchTerm, 1));
 </DIV>
 
 <DIV ID="layout-footer">
-	<P ID="copyright">© 1999–2010 <ABBR TITLE="Segel- und Kanugemeinschaft Bruchertalsperre e. V.">SKGB</ABBR> · <A HREF="mailto:info&#064;skgb.de">info&#064;skgb.de</A>
+	<P ID="copyright">© 1999–<?php echo date('Y'); ?> <ABBR TITLE="Segel- und Kanugemeinschaft Bruchertalsperre e. V.">SKGB</ABBR> · <A HREF="mailto:info&#064;skgb.de">info&#064;skgb.de</A>
 </DIV>
