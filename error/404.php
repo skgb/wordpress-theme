@@ -48,6 +48,7 @@ $requestSearchTerm = htmlspecialchars(substr($requestSearchTerm, 1));
 <P STYLE="margin-top: 2em">Vorschläge:
 <UL>
 
+<!--
 <LI>
 <FORM METHOD="GET" ACTION="http://www.google.com/custom">
 	<INPUT TYPE="hidden" NAME="hl" VALUE="de">
@@ -56,6 +57,7 @@ $requestSearchTerm = htmlspecialchars(substr($requestSearchTerm, 1));
 	<INPUT TYPE="hidden" NAME="cof" VALUE="AH:center;GL:0;S:http://www.skgb.de/;AWFID:7d4c957d83480509;">
 	<P><LABEL>skgb.de mit Google durchsuchen: <INPUT TYPE="text" NAME="q" MAXLENGTH="255" VALUE="<?php echo $requestSearchTerm; ?>"></LABEL> <INPUT TYPE="submit" NAME="sa" VALUE="Suchen">
 </FORM>
+-->
 
 <LI>
 <FORM METHOD="GET" ACTION="/">
@@ -63,6 +65,9 @@ $requestSearchTerm = htmlspecialchars(substr($requestSearchTerm, 1));
 	<INPUT TYPE="hidden" NAME="l" VALUE="<?php echo htmlspecialchars(urldecode($_SERVER['REQUEST_URI'])); ?>">
 	<P><LABEL>skgb.de lokal durchsuchen: <INPUT TYPE="text" NAME="s" VALUE="<?php echo $requestSearchTerm; ?>"></LABEL> <INPUT TYPE="submit" VALUE="Suchen">
 </FORM>
+
+<LI>
+<P>skgb.de mit <A HREF="http://www.google.de/search?q=site:skgb.de">Google</A> durchsuchen
 
 <LI>
 <P>Sitemap von skgb.de anschauen: <A HREF="/sitemap">Alles auf einen Blick</A>
