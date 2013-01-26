@@ -452,6 +452,41 @@ IMG.attachment-large {
 
 
 
+/* <table class=termine> <caption>Terminliste</caption>
+ * <col><col><col>
+ * <thead> <tr>
+ * <th scope=col>Datum  <th scope=col class=time abbr="Zeit">Uhrzeit  <th scope=col>Termin
+ * </thead>
+ * 
+ * Jeder Tag ist ein eigener Tabellenteil <tbody> mit einer ID, welche vom
+ * Skript zur Einfärbung/Markierung der Liste verwendet wird. Die ID hat das
+ * Format "date:2010-12-31" für einen einzelnen Tag. Termine, die sich über
+ * mehrere Tage erstrecken (Fahrtentörns etc.), haben eine ID im Format
+ * "date:2010-06-21:2010-06-25" (von/bis).
+ * 
+ * Jede Uhrzeit ist eine eigene Tabellenzeile <tr>. Bei mehreren Terminen am
+ * selben Tag etc. wird entsprechend mit @rowspan und @colspan gearbeitet.
+ * Zellen mit Uhrzeiten erhalten die Klasse @class=time.
+ * 
+ * Bei Änderungen an Inhalt oder Datum von Terminen werden die alten Angaben
+ * mit del markiert, die neuen danach eingefugt und mit ins markiert. <del>
+ * und <ins> wird dabei jeweils in ein <span> mit @class-del bzw. @class=ins
+ * geschachtelt, um farbige Streichungen zu erreichen:
+ * <tr>
+ * <td><span class=del><del>Samstag, 12. Januar</del></span> <br>
+ *     <span class=ins><ins>Samstag, 26. Januar</ins></span>
+ * <td class=time>15:00 Uhr  <td>Mitgliedertreffen
+ * 
+ * Tabellenzeilen ausfallender Termine erhalten die Klasse <tr class=del> und
+ * die Terminbeschreibung wird in ein <del>-Element gesetzt:
+ * <tr class=del>
+ * <td>Samstag, 19. Mai  <td class=time>18:00 Uhr  <td><del>Maitanz</del>
+ * 
+ * Neu eingefügte Termine erhalten die Klasse <tr class=ins> für die
+ * Tabellenzeile und die Beschreibung wird in ein <ins>-Element gesetzt: (VERMUTLICH!)
+ * <tr class=ins>
+ * <td>Samstag, 26. Mai  <td class=time>14:00 Uhr  <td><ins>Grillparty</ins>
+ */
 
 #layout-main TABLE {
 	border-collapse: collapse;
