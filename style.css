@@ -555,7 +555,7 @@ IMG.attachment-large {
 #layout-main TBODY.date-past TD, #layout-main TBODY.date-past .del>*, #layout-main TBODY.date-past .ins>* {
 	color: #333;
 }
-#layout-main TBODY.date-now {
+#layout-main TBODY.date-now, #layout-main TBODY.date-soon {
 	background-color: #feffcc;
 	border-color: #dddcc5;
 }
@@ -573,12 +573,12 @@ IMG.attachment-large {
 #layout-main .del>*, #layout-main .ins>* {
 	color: black;
 }
-#layout-main INS, #layout-main DEL, #layout-main SPAN.date-now {
+#layout-main INS, #layout-main DEL, #layout-main SPAN.date-now, #layout-main SPAN.date-soon {
 	text-decoration: none;
 	display: block;
 	position: relative;
 }
-#layout-main INS:before, #layout-main DEL:before, #layout-main SPAN.date-now:before {
+#layout-main INS:before, #layout-main DEL:before, #layout-main SPAN.date-now:before, #layout-main SPAN.date-soon:before {
 	display: block;
 	position: absolute;
 	left: 100%;
@@ -603,6 +603,10 @@ IMG.attachment-large {
 }
 #layout-main SPAN.date-now:before {
 	content: 'heute!';
+	z-index: 2;
+}
+#layout-main SPAN.date-soon:before {
+	content: 'morgen!';
 	z-index: 2;
 }
 #layout-main SPAN.ins>INS, #layout-main SPAN.del>DEL {

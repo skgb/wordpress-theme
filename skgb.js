@@ -20,7 +20,7 @@ SKGB.bodyElementWidth = 960;
 SKGB.searchPlaceholderText = 'Suche';
 SKGB.calendarTableClassName = 'termine';
 SKGB.calendarTbodyIdRegExp = /^date:([0-9]{4})-?(0[1-9]|1[0-2])-?(0[1-9]|[1-2][0-9]|3[0-1])(?::([0-9]{4})-?(0[1-9]|1[0-2])-?(0[1-9]|[1-2][0-9]|3[0-1]))?$/;
-SKGB.calendarTbodyClassNames = {'-1': 'date-past', '0': 'date-now', '1': 'date-future'};
+SKGB.calendarTbodyClassNames = {'-1': 'date-past', '0': 'date-now', '1': 'date-future', '2': 'date-soon'};
 
 
 SKGB.windowDimensions = function () {
@@ -170,17 +170,20 @@ SKGB.updateCalendarTable = function () {
 			}
 			else if (nowYear < fromYear || nowYear == fromYear && (nowMonth < fromMonth || nowMonth == fromMonth && nowDay < fromDay)) {
 				state = 1;  // the <tbody>'s date is in the future
+				if (nowYear == fromYear && (nowMonth == fromMonth - 1 && nowDay == 31 && fromDay == 1 || nowMonth == fromMonth && nowDay == fromDay - 1)) {
+					state = 2;  // the <tbody>'s date is tomorrow (may not cover all cases)
+				}
 			}
 			tbodyNode.className += ' ' + SKGB.calendarTbodyClassNames[state];
 			
 			// insert DOM node for 'today!' marker
-			if (state == 0) {
+			if (state == 0 || state == 2) {
 				if (! tbodyNode.getElementsByTagName || ! document.createElement) { continue; }
 				var tdNodes = tbodyNode.getElementsByTagName('TD');
 				var lastTdNode = tdNodes[tdNodes.length - 1];
 				if (! lastTdNode.insertBefore || ! lastTdNode.firstChild) { continue; }
 				var markerNode = document.createElement('SPAN');
-				markerNode.className = 'date-now';
+				markerNode.className = state == 0 ? 'date-now' : 'date-soon';
 				lastTdNode.insertBefore(markerNode, lastTdNode.firstChild);
 			}
 		}
