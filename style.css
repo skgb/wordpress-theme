@@ -173,6 +173,47 @@ H1#layout-masthead IMG {
 	display: none;
 }
 
+#layout-sidebar .follow-buttons {
+	margin-top: 1.4em;
+	cursor: default;
+}
+#layout-sidebar .follow-buttons SPAN {
+	color: transparent;
+	position: absolute;
+	z-index: -1;
+}
+#layout-sidebar .follow-buttons A {
+	cursor: pointer;
+	color: transparent;
+	display: block;
+	width: 29px;
+	height: 29px;
+	overflow: hidden;
+	background-image: url(images/follow-buttons.png);
+	position: absolute;
+}
+#layout-sidebar .follow-buttons A:hover {
+	opacity: .67;
+	background-color: inherit !important;
+	color: transparent !important;
+}
+#layout-sidebar .follow-buttons A.twitter {
+	background-position: 0 0;
+	width: 35px;
+	left: 7%;
+	margin-left: -4px;
+}
+#layout-sidebar .follow-buttons A.facebook {
+	background-position: -35px 0;
+	left: 50%;
+	margin-left: -15px;
+}
+#layout-sidebar .follow-buttons A.feed {
+	background-position: -64px 0;
+	right: 7%;
+	margin-left: 1px;
+}
+
 /* @end */
 
 

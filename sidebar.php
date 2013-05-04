@@ -102,6 +102,12 @@ if (strlen($searchValue) > 0) {
 <?php wp_list_bookmarks('exclude=9&categorize=0&title_li=&title_after=&title_before='); ?>
 <?php wp_meta(); ?>
 </UL>
+<DIV CLASS="follow-buttons">
+	<SPAN>Folge uns mit …</SPAN>
+	<A HREF="https://twitter.com/bruchersegler" TITLE="folge uns auf Twitter!" CLASS="twitter">Twitter</A>
+	<A HREF="https://facebook.com/skgb.de" TITLE="folge uns bei Facebook!" CLASS="facebook">Facebook</A>
+	<A HREF="/feed" TITLE="folge unserem RSS-Feed!" CLASS="feed">RSS-Feed</A>
+</DIV>
 
 </DIV>
 <!-- end sidebar -->
