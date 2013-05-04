@@ -178,13 +178,10 @@ H1#layout-masthead IMG {
 	cursor: default;
 }
 #layout-sidebar .follow-buttons SPAN {
-	color: transparent;
-	position: absolute;
-	z-index: -1;
+	display: none;
 }
 #layout-sidebar .follow-buttons A {
 	cursor: pointer;
-	color: transparent;
 	display: block;
 	width: 29px;
 	height: 29px;
@@ -193,9 +190,11 @@ H1#layout-masthead IMG {
 	position: absolute;
 }
 #layout-sidebar .follow-buttons A:hover {
-	opacity: .67;
 	background-color: inherit !important;
-	color: transparent !important;
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=67)';
+	filter: alpha(opacity=67);
+	/* seriously, is this a joke?! */
+	opacity: .67;
 }
 #layout-sidebar .follow-buttons A.twitter {
 	background-position: 0 0;
