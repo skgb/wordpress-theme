@@ -131,7 +131,7 @@ else {
 	// 404.ini says this actually is a 404
 	
 	// determine whether content exists on archiv.skgb.de (case (3) [307])
-	define('SB_ARCHIV_ROOT_PATH', '/srv/skgb.archiv');
+	define('SB_ARCHIV_ROOT_PATH', $_SERVER['HOME'] . '/srv/archiv');
 	define('SB_ARCHIV_ROOT_URI', 'http://archiv.skgb.de');
 	$contentArchived = FALSE;
 	if (array_key_exists('REDIRECT_URL', $_SERVER)) {
@@ -156,6 +156,9 @@ else {
 		preg_match_all('/[\w\pL\pN]+/u', urldecode($_SERVER['REQUEST_URI']), $requestSearchTermList);
 		$requestSearchTerm = '';
 		foreach ($requestSearchTermList[0] as $requestSearchTermPart) {
+			if ($requestSearchTermPart == 'html' || $requestSearchTermPart == 'shtml' || $requestSearchTermPart == 'index') {
+				continue;
+			}
 			$requestSearchTerm .= ' ' . $requestSearchTermPart;
 		}
 		$requestSearchTerm = esc_html(substr($requestSearchTerm, 1));
