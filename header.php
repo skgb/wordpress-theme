@@ -18,8 +18,7 @@ require(TEMPLATEPATH . '/assert_dependencies.php');
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML <?php language_attributes(); ?>>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=<?php bloginfo('charset'); ?>">
-<TITLE>
-<?php
+<TITLE><?php
 //bloginfo('name');
 if (is_front_page()) {
 	echo get_bloginfo('description'), ' –';
@@ -27,8 +26,7 @@ if (is_front_page()) {
 else {
 	wp_title('&laquo;', true, 'right');
 }
-?>
- SKGB</TITLE>
+?> SKGB</TITLE>
 <STYLE TYPE="text/css">
 @import url( <?php bloginfo('stylesheet_url'); ?> );
 </STYLE>
