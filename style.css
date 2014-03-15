@@ -509,8 +509,8 @@ IMG.attachment-large {
  * Zellen mit Uhrzeiten erhalten die Klasse @class=time.
  * 
  * Bei Änderungen an Inhalt oder Datum von Terminen werden die alten Angaben
- * mit del markiert, die neuen danach eingefugt und mit ins markiert. <del>
- * und <ins> wird dabei jeweils in ein <span> mit @class-del bzw. @class=ins
+ * mit del markiert, die neuen danach eingefügt und mit ins markiert. <del>
+ * und <ins> wird dabei jeweils in ein <span> mit @class=del bzw. @class=ins
  * geschachtelt, um farbige Streichungen zu erreichen:
  * <tr>
  * <td><span class=del><del>Samstag, 12. Januar</del></span> <br>
