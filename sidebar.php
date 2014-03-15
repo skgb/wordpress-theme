@@ -83,7 +83,7 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
 // :TODO: make the link list above somehow independent of slug names and/or IDs
 wp_list_pages('title_li=&exclude=2,42,46,49,51,54,190,193,197');
 $categoriesList = wp_list_categories('title_li=&exclude=1,5,6,7&hide_empty=0&echo=0');
-if (strpos($categoriesList, '<li>' . __('No categories') . '</li>') === FALSE) {
+if (strpos($categoriesList, '<li>' . __('No categories') . '</li>') !== FALSE) {
 	echo $categoriesList;
 }
 $searchValue = esc_attr(get_search_query());
