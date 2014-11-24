@@ -64,7 +64,7 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
 	<LI><?php printMenuItem('page', 2, '/jugend', 'Jugendgruppe'); ?>
 	<LI><?php printMenuItem('page', 54, '/mitsegeln', 'Mitsegeln'); ?>
 	<LI><?php printMenuItem('cat', 7, '/ausbildung', 'Segelkurse'); ?>
-	<LI><?php printMenuItem('post', 0, '/allgemein/2014/termine-2014', 'Termine'); ?>
+	<LI><?php printMenuItem('post', 0, '/allgemein/2014/termine-2015', 'Termine'); ?>
 	<LI><?php printMenuItem('cat', 5, '/regatten', 'Regatten'); ?>
 	<LI><?php printMenuItem('cat', 6, '/galerie', 'Fotogalerie'); ?>
 	<LI><?php printMenuItem('page', 49, '/kontakt', 'Kontakt'); ?>
