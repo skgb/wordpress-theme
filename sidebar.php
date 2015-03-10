@@ -105,7 +105,7 @@ if (strlen($searchValue) > 0) {
 <DIV CLASS="follow-buttons">
 	<SPAN>Folge uns mit …</SPAN>
 	<A HREF="https://twitter.com/bruchersegler" TITLE="folge uns auf Twitter!" CLASS="twitter"><SPAN>Twitter</SPAN></A>
-	<A HREF="https://facebook.com/skgb.de" TITLE="folge uns bei Facebook!" CLASS="facebook"><SPAN>Facebook</SPAN></A>
+	<A HREF="https://www.facebook.com/skgb.de" TITLE="folge uns bei Facebook!" CLASS="facebook"><SPAN>Facebook</SPAN></A>
 	<A HREF="/feed" TITLE="folge unserem RSS-Feed!" CLASS="feed"><SPAN>RSS-Feed</SPAN></A>
 </DIV>
 
