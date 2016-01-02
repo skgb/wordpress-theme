@@ -46,27 +46,16 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
 <DIV ID="layout-sidebar">
 
 <UL CLASS="menu">
-<!--
-	<?php # cat   1 ?><LI><A HREF="/">Neuigkeiten</A>
-	<?php # page 46 ?><LI><?php if (is_page(46)) { ?><STRONG>Über uns</STRONG><?php } else { ?><A HREF="/segelverein">Über uns</A><?php } echo "\n"; ?>
-	<?php # page 42 ?><LI><A HREF="/brucher">Segelrevier</A>
-	<?php # page  2 ?><LI><A HREF="/jugend">Jugendgruppe</A>
-	<?php # page 54 ?><LI><A HREF="/mitsegeln">Mitsegeln</A>
-	<?php # cat   7 ?><LI><A HREF="/ausbildung">Segelkurse</A>
-	<?php # page 51 ?><LI><A HREF="/termine">Termine</A>
-	<?php # cat   5 ?><LI><A HREF="/regatten">Regatten</A>
-	<?php # cat   6 ?><LI><A HREF="/galerie">Fotogalerie</A>
-	<?php # page 49 ?><LI><A HREF="/kontakt">Kontakt</A>
--->
 	<LI><?php printMenuItem('front', 1, '/', 'Neuigkeiten'); ?>
 	<LI><?php printMenuItem('page', 46, '/segelverein', 'Über uns'); ?>
 	<LI><?php printMenuItem('page', 42, '/brucher', 'Segelrevier'); ?>
 	<LI><?php printMenuItem('page', 2, '/jugend', 'Jugendgruppe'); ?>
-	<LI><?php printMenuItem('page', 54, '/mitsegeln', 'Mitsegeln'); ?>
+	<LI><?php printMenuItem('page', 54, '/mitsegeln', 'Mitgliedschaft'); ?>
+	<LI><?php printMenuItem('page', 1638, '/vereinsboote', 'Vereinsboote'); ?>
 	<LI><?php printMenuItem('cat', 7, '/ausbildung', 'Segelkurse'); ?>
 	<LI><?php printMenuItem('post', 0, '/allgemein/2014/termine-2015', 'Termine'); ?>
 	<LI><?php printMenuItem('cat', 5, '/regatten', 'Regatten'); ?>
-	<LI><?php printMenuItem('cat', 6, '/galerie', 'Fotogalerie'); ?>
+	<!--<LI><?php printMenuItem('cat', 6, '/galerie', 'Fotogalerie'); ?>-->
 	<LI><?php printMenuItem('page', 49, '/kontakt', 'Kontakt'); ?>
 <?php
 /* We're mixing links to categories and pages here because we
@@ -81,7 +70,7 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
  * - page 197: /sitemap
  */
 // :TODO: make the link list above somehow independent of slug names and/or IDs
-wp_list_pages('title_li=&exclude=2,42,46,49,51,54,190,193,197');
+wp_list_pages('title_li=&exclude=2,42,46,49,51,54,190,193,197,1638');
 $categoriesList = wp_list_categories('title_li=&exclude=1,5,6,7&hide_empty=0&echo=0');
 if (strpos($categoriesList, '<li>' . __('No categories') . '</li>') !== FALSE) {
 	echo $categoriesList;
@@ -92,6 +81,7 @@ if (strlen($searchValue) > 0) {
 }
 ?>
 </UL>
+
 <UL CLASS="sitemenu">
 	<LI><FORM ID="searchform" METHOD="get" ACTION="<?php bloginfo('url'); ?>"><DIV><INPUT TYPE="text" NAME="s"<?php echo $searchValue; ?> TABINDEX="1" CLASS="placeholder"> <INPUT TYPE="submit" VALUE="<?php _e('Search'); ?>"></DIV></FORM>
 	<LI><?php printMenuItem('page', 197, '/sitemap', 'Alles auf einen Blick', ' id="menuitem-197"'); ?>
@@ -102,6 +92,7 @@ if (strlen($searchValue) > 0) {
 <?php wp_list_bookmarks('exclude=9&categorize=0&title_li=&title_after=&title_before='); ?>
 <?php wp_meta(); ?>
 </UL>
+
 <DIV CLASS="follow-buttons">
 	<SPAN>Folge uns mit …</SPAN>
 	<A HREF="https://twitter.com/bruchersegler" TITLE="folge uns auf Twitter!" CLASS="twitter"><SPAN>Twitter</SPAN></A>
