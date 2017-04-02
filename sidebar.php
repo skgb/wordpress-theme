@@ -53,7 +53,7 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
 	<LI><?php printMenuItem('page', 54, '/mitsegeln', 'Mitgliedschaft'); ?>
 	<LI><?php printMenuItem('page', 1638, '/vereinsboote', 'Vereinsboote'); ?>
 	<LI><?php printMenuItem('cat', 7, '/ausbildung', 'Segelkurse'); ?>
-	<LI><?php printMenuItem('post', 0, '/allgemein/2016/termine-2016', 'Termine'); ?>
+	<LI><?php printMenuItem('post', 0, '/allgemein/2016/termine-2017', 'Termine'); ?>
 	<LI><?php printMenuItem('cat', 5, '/regatten', 'Regatten'); ?>
 	<!--<LI><?php printMenuItem('cat', 6, '/galerie', 'Fotogalerie'); ?>-->
 	<LI><?php printMenuItem('page', 49, '/kontakt', 'Kontakt'); ?>
