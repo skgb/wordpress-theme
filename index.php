@@ -29,7 +29,7 @@ else {
 <H2>Archiv</H2><?php # :BUG: this heading level is supposed to be in-between H1 and the individual post's level. ?>
 <?php if ( function_exists('bhCalendarchives') ) { bhCalendarchives('num'); } ?>
 <?php # where args can be 'num', 'first', 'short'. ?>
-<P>Unsere <A HREF="//archiv.skgb.de/">alte Website</A> wurde auf dem Stand von Anfang 2009 eingefroren (<A HREF="//archiv.skgb.de/">archiv.skgb.de</A>).
+<P>Unsere <A HREF="http://archiv.skgb.de/">alte Website</A> wurde auf dem Stand von Anfang 2009 eingefroren (<A HREF="http://archiv.skgb.de/">archiv.skgb.de</A>).
 </DIV>
 <?php elseif ( is_tag() ) : ?>
 <DIV ID="template-description">

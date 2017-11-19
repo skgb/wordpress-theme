@@ -76,7 +76,7 @@ $requestSearchTerm = htmlspecialchars(substr($requestSearchTerm, 1));
 <P>Archiv von skgb.de anschauen: <A HREF="/2009">datiertes Archiv</A>
 
 <LI>
-<P>In 2009 haben wir im Zuge eines Softwarewechsels einige ältere Seiten archiviert. Langfristig möchten wir alle diese Inhalte in die neue Software überführen. Wenn du Informationen aus der Zeit vor 2009 suchst, magst du vielleicht in den alten Seiten blättern, bis wir damit fertig sind: <A HREF="//archiv.skgb.de/">archiv.skgb.de</A>
+<P>In 2009 haben wir im Zuge eines Softwarewechsels einige ältere Seiten archiviert. Langfristig möchten wir alle diese Inhalte in die neue Software überführen. Wenn du Informationen aus der Zeit vor 2009 suchst, magst du vielleicht in den alten Seiten blättern, bis wir damit fertig sind: <A HREF="http://archiv.skgb.de/">archiv.skgb.de</A>
 
 <LI>
 <P>Wenn du Inhalte nicht findest, die deiner Meinung nach unter dieser Adresse existieren sollten, oder du über einen Hyperlink von einer anderen Seite hierher gekommen bist, melde das Problem bitte dem Vereinsvorstand (→ <A HREF="/kontakt">Kontakt</A>).
