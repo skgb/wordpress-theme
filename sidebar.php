@@ -53,7 +53,7 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
 	<LI><?php printMenuItem('page', 54, '/mitsegeln', 'Mitgliedschaft'); ?>
 	<LI><?php printMenuItem('page', 1638, '/vereinsboote', 'Vereinsboote'); ?>
 	<LI><?php printMenuItem('cat', 7, '/ausbildung', 'Segelkurse'); ?>
-	<LI><?php printMenuItem('post', 0, '/allgemein/2016/termine-2017', 'Termine'); ?>
+	<LI><?php printMenuItem('post', 0, '/allgemein/2018/termine-2019', 'Termine'); ?>
 	<LI><?php printMenuItem('cat', 5, '/regatten', 'Regatten'); ?>
 	<!--<LI><?php printMenuItem('cat', 6, '/galerie', 'Fotogalerie'); ?>-->
 	<LI><?php printMenuItem('page', 49, '/kontakt', 'Kontakt'); ?>
@@ -85,9 +85,9 @@ if (strlen($searchValue) > 0) {
 <UL CLASS="sitemenu">
 	<LI><FORM ID="searchform" METHOD="get" ACTION="<?php bloginfo('url'); ?>"><DIV><INPUT TYPE="text" NAME="s"<?php echo $searchValue; ?> TABINDEX="1" CLASS="placeholder"> <INPUT TYPE="submit" VALUE="<?php _e('Search'); ?>"></DIV></FORM>
 	<LI><?php printMenuItem('page', 197, '/sitemap', 'Alles auf einen Blick', ' id="menuitem-197"'); ?>
-	<LI><?php printMenuItem('', 0, '/2012', 'Archiv'); ?>
+	<LI><?php printMenuItem('', 0, '/2018', 'Archiv'); ?>
 <?php if (count(get_bookmark(9)->link_category)) : ?>
-	<LI><A HREF="//intern.skgb.de/" CLASS="skgb-intern">SKGB<EM>-intern</EM></A>
+	<LI><A HREF="https://intern.skgb.de/digest/" CLASS="skgb-intern">SKGB<EM>-intern</EM></A>
 <?php endif; ?>
 <?php wp_list_bookmarks('exclude=9&categorize=0&title_li=&title_after=&title_before='); ?>
 <?php wp_meta(); ?>
