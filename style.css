@@ -173,46 +173,6 @@ H1#layout-masthead IMG {
 	display: none;
 }
 
-#layout-sidebar .follow-buttons {
-	margin-top: 1.4em;
-	cursor: default;
-}
-#layout-sidebar .follow-buttons SPAN {
-	display: none;
-}
-#layout-sidebar .follow-buttons A {
-	cursor: pointer;
-	display: block;
-	width: 29px;
-	height: 29px;
-	overflow: hidden;
-	background-image: url(images/follow-buttons.png);
-	position: absolute;
-}
-#layout-sidebar .follow-buttons A:hover {
-	background-color: inherit !important;
-	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=67)';
-	filter: alpha(opacity=67);
-	/* seriously, is this a joke?! */
-	opacity: .67;
-}
-#layout-sidebar .follow-buttons A.twitter {
-	background-position: 0 0;
-	width: 35px;
-	left: 7%;
-	margin-left: -4px;
-}
-#layout-sidebar .follow-buttons A.facebook {
-	background-position: -35px 0;
-	left: 50%;
-	margin-left: -15px;
-}
-#layout-sidebar .follow-buttons A.feed {
-	background-position: -64px 0;
-	right: 7%;
-	margin-left: 1px;
-}
-
 /* @end */
 
 
