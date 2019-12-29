@@ -1,10 +1,12 @@
 /*
 Theme Name: SKGB-Web V
-Theme URI: http://www.skgb.de/
-Description: Das neue Theme der Segel- und Kanugemeinschaft Bruchertalsperre – SKGB-Web Version 5.0 – modernisiert Design und Funktionalität des SKGB-Web in Wordpress.
-Version: 5.0
-Author: Arne Johannessen, 2009
-Tags: skgb, proprietary, confidential, utf8
+Theme URI: https://github.com/skgb/wordpress-theme-5
+Description: Das Wordpress-Theme der Segel- und Kanugemeinschaft Brucher Talsperre – SKGB-Web Version 5.1 – modernisiert Design und Funktionalität des traditionellen SKGB-Web.
+Version: 5.1
+Author: Arne Johannessen, 2009-2012
+Author URI: https://github.com/johannessen
+License: GNU General Public License v2 or later
+License URI: LICENSE
 
 */
 
