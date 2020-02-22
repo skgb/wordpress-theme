@@ -41,6 +41,23 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
 	}
 }
 
+function SB_path_termine () {
+	// find newest post with tag "Termine" and title like "Termine 2019"
+	$query = new WP_Query(array(
+		'tag' => 'termine',
+		'orderby' => 'DESC',
+		'ignore_sticky_posts' => TRUE,
+		'posts_per_page' => 5,  // typically, there are <= 2 'termine' posts per year
+	));
+	foreach ($query->get_posts() as $post) {
+		if ( preg_match('/^Termine 20[0-9]{2}\b/i', get_the_title($post)) ) {
+			// printMenuItem() expects a path reference, not a URI
+			return preg_replace('|^https?://www.skgb.de/|', '/', get_permalink($post));
+		}
+	}
+	return '/stichwort/termine';
+}
+
 ?>
 <!-- begin sidebar -->
 <DIV ID="layout-sidebar">
@@ -53,7 +70,7 @@ function printMenuItem ($type, $id, $uri, $text, $args = '') {
 	<LI><?php printMenuItem('page', 54, '/mitsegeln', 'Mitgliedschaft'); ?>
 	<LI><?php printMenuItem('page', 1638, '/vereinsboote', 'Vereinsboote'); ?>
 	<LI><?php printMenuItem('cat', 7, '/ausbildung', 'Segelkurse'); ?>
-	<LI><?php printMenuItem('post', 0, '/allgemein/2018/termine-2019', 'Termine'); ?>
+	<LI><?php printMenuItem('post', 0, SB_path_termine(), 'Termine'); ?>
 	<LI><?php printMenuItem('cat', 5, '/regatten', 'Regatten'); ?>
 	<!--<LI><?php printMenuItem('cat', 6, '/galerie', 'Fotogalerie'); ?>-->
 	<LI><?php printMenuItem('page', 49, '/kontakt', 'Kontakt'); ?>
