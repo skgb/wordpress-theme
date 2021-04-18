@@ -11,7 +11,10 @@ dass du sie selbst forken, verändern und weiterverwenden kannst.
 
 Dieses Theme ist zugeschnitten auf die Wordpress-Inhalte der SKGB im
 Jahr 2009. Einige Aspekte sind hardcoded, so etwa manche Artikel-IDs.
-Das Theme sollte gemeinsam mit dem [SKGB–Plug-in][] verwendet werden.
+Das Theme sollte gemeinsam mit folgenden Plug-ins verwendet werden:
+
+* [SKGB–Plug-in][] (`skgb-web`)
+* [bhCalendarchives](https://github.com/johannessen/bhcalendarchives)
 
 [freien Lizenz]: https://github.com/skgb/wordpress-theme/blob/skgb5/LICENSE
 [SKGB]: https://www.skgb.de/
